@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <style type="text/css" media="screen">
+      form article label {
+        display: block;
+        margin: 5px;
+      }
+
+      form .submit {
+        margin: 15px 0;
+      }
+    </style>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name=
+  "viewport"><!-- Bootstrap CSS -->
+  <link href='http://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
+  <link href=
+  "https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+  rel="stylesheet">
+  <link rel= "stylesheet" type= "text/css" href= "static/styles/main.css">
+  {% if title %}
+  <title>Pizza - {{ title }}</title>
+  {% else %}
+  <title>Pizza</title>
+  {% endif %}
+
+
+
+  <nav class="navbar border-bottom fixed-top navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand "style="border-bottom:none" href="/">
+        <img src="/static/brandlogo.png" width="35" height="35" class="d-inline-block align-middle" alt="" >
+        <b>Pizza</b>
+      </a>
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav ">
+          <a class="nav-item  nav-link" href="/menu">Menu </a>
+          <a class="nav-item nav-link" href="/order">Order</a>
+
+
+        </div>
+      </div></div>
+    </nav>
+
+  </head><br><br>
+  <body class="bg-light">
+
+
+    <main class="container">
+      {% block content %}{% endblock %}
+    </main>
+
+    <footer class=" page-footer bg-dark font-small mt-2 text-secondary pt-4" align="center">
+      <div class="container">
+        <div class="row ">
+          <div class="col ml-5 mr-0">
+            <nav class="navbar navbar-expand-lg navbar-dark justify-content-center ">
+
+
+              <div class="navbar-nav ">
+                <a class="nav-item nav-link  " href="/menu">Menu</a>
+                <a class="nav-item nav-link  " href="/order">Order Online</a>
+
+              </div>
+            </div>
+          </div>
+          <div class="w-100"></div>
+          <div class="col "><div class="footer-copyright text-center py-3">© 2018 Copyright:
+
+          </div></div>
+        </div>
+
+      </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js">
+    </script>
+    <script src=
+    "https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js">
+    </script>
+    <script src=
+    "https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js">
+    </script>
+  </body>
+  </html>

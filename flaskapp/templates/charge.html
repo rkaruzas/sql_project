@@ -1,0 +1,11 @@
+{% extends "layout.html" %}
+{% block content %}
+<br>
+    <script>
+        window.onload = function(){
+	    var cost = {{amount}}/100;
+	    document.getElementById('output').innerHTML = cost;
+	};
+    </script>
+    <h2>Thanks, you paid $<p id="output" style = "display:inline"></p>! </h2>
+{% endblock %}

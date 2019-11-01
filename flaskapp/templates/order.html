@@ -1,0 +1,38 @@
+{% extends "layout.html" %}
+{% block content %}
+<div class="container pt-5">
+<h2 class="text-uppercase text-secondar text-center"style="font-family:Comic Sans MS">Orer Here</h2>
+  <form action="/task" method="POST">
+	<select name="price" class="form-control ">
+	    <option value ="200">Pepperoni</option>
+            <option value="250">Pineapple</option>
+   	    <option value ="300">BBQ </option>
+	    <option value="400">Deluxe</option>
+	</select>
+  <br>
+	<input type = "submit" class="btn btn-secondary " value="Add pizza">
+  </form>
+
+  <form action="/charge" method="post">
+    <article>
+      <label>
+	      <span>The amount is $<p id = "output" style = "display:inline"></p></span>
+	<script>
+		window.onload = function(){
+			var cost = {{price}} / 100;
+			document.getElementById('output').innerHTML = cost;
+		};
+	</script>
+      </label>
+    </article>
+  <script src="https://checkout.stripe.com/checkout.js" class="stripe-button "
+            data-key="{{ key }}"
+	    data-label="Buy Pizza"
+            data-description="Pizza"
+	    data-amount= "{{price}}"
+            data-locale="auto"></script>
+  </form>
+  </div>
+
+
+{% endblock %}

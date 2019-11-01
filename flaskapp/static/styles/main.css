@@ -1,0 +1,56 @@
+nav a:hover {
+ border-bottom: 2px solid LightGray;
+
+
+}
+nav a:active {
+  color: white;
+}
+a{
+  margin-Right: 25px;
+
+}
+.bottom-left {
+  position: absolute;
+  bottom: 10%;
+  left:15px;
+  color:white;
+font-weight: bold;
+font-size: 20px;
+text-transform: uppercase;
+}
+
+
+/* image overlay*/
+.overlay{
+ color:red;
+}
+.overlay-text {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.overlay:hover .overlay-image {
+  opacity: 0.7;
+}
+
+.overlay:hover .overlay-text {
+  opacity: 1;
+}
+
+.overlay-btn {
+  font-size: 16px;
+  padding: 16px 32px;
+}
+.card:hover{
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.2s;
+  border-radius: 5px;
+}
+/* Add an active class to highlight the current page */

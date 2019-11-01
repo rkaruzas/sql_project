@@ -1,0 +1,122 @@
+{% extends "layout.html" %}
+{% block content %}
+<div class="bd-example">
+  <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+      <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+      <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+    </ol>
+
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="/static/image1.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h4>Pepperoni Pizza</h4>
+          <p>Try our newly added Pepperoni pizza</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="/static/image2.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h4>Homemade herbs and ingreidients</h4>
+          <p>We use fresh and homemade ingreidients for our pizzas</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="/static/image3.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption fade-in d-none d-md-block">
+          <h4>Orders</h4>
+          <p>Now you can order from our website.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<main class="container">
+  <div class="row mt-4 ">
+    <div class="col-2">
+
+    </div>
+    <div class="col-6 pr-5">
+      <h4 class="text-uppercase text-dark  pt-1">Start your order</h4>
+    </div><div class="col-0 pr-3">
+
+    <a  href="/order"  class="btn btn-danger text-uppercase pl-5 pr-5">Order</a>
+  </div>
+</div>
+<div class="row pt-4">
+  <div class="col-sm">
+    <div class="w-100"></div>
+    <div class="card" style="width: 18rem;">
+      <img src="/static/veggiee.jpg"  class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Veggie Pizza</h5>
+        <p class="card-text text-secondary pb-2"><small>A medley of fresh green peppers, onion, tomatoes, mushrooms, and olives.<br><br></small></p>
+        <a href="/order" class="btn btn-primary">Order</a>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm">
+    <div class="w-100"></div>
+    <div class="card" style="width: 18rem;">
+      <img src="/static/bbq_chicken.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">BBQ Chicken Pizza</h5>
+        <p class="card-text text-secondary pb-2"><small>Smothered in flavorful BBQ sauce and loaded with chicken, bacon, onions, green peppers and cheddar cheese.</small></p>
+      <a href="/order" class="btn btn-primary" >Order</a>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm">
+    <div class="w-100"></div>
+    <div class="card" style="width: 18rem;">
+      <img src="/static/hawaiian.jpg"  class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Hawaiian Pizza</h5>
+        <p class="card-text text-secondary pb-2"><small>A medley of fresh green peppers, onion, tomatoes, mushrooms, and olives.<br><br></small></p>
+      <a href="/order" class="btn btn-primary">Order</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="row pt-3 pb-2">
+  <div class="col-sm">
+    <div class="card" style="width: 18rem;">
+      <img src="/static/pepperoni2.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Pepperoni Pizza</h5>
+        <p class="card-text text-secondary pb-2"><small>Lots and lots of pepperoni topped with an extra layer of cheese.<br><br></small></p>
+        <a href="/order" class="btn btn-primary">Order</a>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm">
+    <div class="card" style="width: 18rem;">
+      <img src="/static/Deluxe.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Deluxe Pizza</h5>
+        <p class="card-text text-secondary pb-2"><small>Loads of pepperoni, fresh mushrooms, and smoked bacon, topped with a layer of premium mozzarella cheese.</small></p>
+      <a href="/order" class="btn btn-primary">Order</a>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm">
+    <div class="card" style="width: 18rem;">
+      <img src="/static/cbr.jpg"  class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Chicken Bacon Ranch</h5>
+        <p class="card-text text-secondary pb-2"><small>A Ranch Sauce base with a Mozzarella Cheese blend, fresh tomatoes, peppers, all white-meat chicken and bacon.
+</small></p>
+      <a href="/order" class="btn btn-primary">Order</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+</main>
+{% endblock %}
